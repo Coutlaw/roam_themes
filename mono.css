@@ -1,0 +1,243 @@
+@import url('https://felixjamestin.github.io/roam-themeset/base.css');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    /* Knobs */
+    --font-size: 14px;
+    --header-font: "Inter", sans-serif;	
+    --body-font: "Inter", sans-serif;
+    --max-text-width: "42em"; /* Eg "640px", "520px, "42em", etc */
+    --sidebar-default-opacity: .15; /* Change this to 1 if you want the sidebar to always be visible in desktop view */
+    --embeds-show-reference-count: initial; /* Set this to 'initial' to show it; 'none' to hide it */
+    --sidebar-show-reference-count: initial; /* Set this to 'initial' to show it; 'none' to hide it */
+  
+    /* Current: Puma */  
+    --header-font: "IBM Plex Mono", sans-serif;	
+    --body-font: "IBM Plex Mono", sans-serif;
+  
+    --body-background-color: #243342;
+    --popup-background-color: #243342;
+    --main-background-color: #202E3C;
+    --search-background-color: #202E3C;
+    --block-highlight-accent-color: #C8A1FF;
+    
+    --body-text-color: #FFFFFF;
+    --black-text: #222222;
+    --empty-text-color: #9DA5B4;
+    --sidebar-base-text-color: #9DA5B4;
+    
+    --title-accent-color: #50FA7B;
+    --primary-accent-color: #50FA7B;
+    --secondary-accent-color: #C8A1FF;
+    --secondary-accent-extra-color: #C8A1FF;
+    --tertiary-accent-color: #8BE9FD;
+    --tertiary-accent-extra-color: #46DFFF;
+    
+    --border-color: rgba(0, 0, 0, 0.08);
+    --subtle-border-color: rgba(255, 255, 255, 0.11);
+    --search-border-color: rgba(255, 255, 255, 0.08);
+    --reference-item-background: rgba(0, 0, 0, 0.10);
+    --brackets-color: rgba(0, 0, 0, 0.25); 
+ 
+    /* To use a theme from below, replace the current theme with it
+    // Asuka
+    --body-background-color: #5E334A;
+    --popup-background-color: #5E334A;
+    --main-background-color: #422434;
+    --search-background-color: #422434;
+    --block-highlight-accent-color: #985B7C;
+    
+    --body-text-color: #FFFFFF;
+    --black-text: #222222;
+    --empty-text-color: #FFFFFF;
+    --sidebar-base-text-color: #FFFFFF;
+    
+    --title-accent-color: #FFA96B;
+    --primary-accent-color: #FFA96B;
+    --secondary-accent-color: #FFADCB;
+    --secondary-accent-extra-color: #FF93BA;
+    --tertiary-accent-color: #FFBDD5;
+    --tertiary-accent-extra-color: #FF93BA;
+    
+    --border-color: rgba(0, 0, 0, 0.08);
+    --subtle-border-color: rgba(255, 255, 255, 0.11);
+    --search-border-color: rgba(255, 255, 255, 0.08);
+    --reference-item-background: rgba(0, 0, 0, 0.15);
+    --brackets-color: rgba(0, 0, 0, 0.25); 
+    // Arrakis
+    --body-background-color: #47322D;
+    --popup-background-color: #47322D;
+    --main-background-color: #392824;
+    --search-background-color: #392824;
+    --block-highlight-accent-color: #946D63;
+    
+    --body-text-color: #FFFFFF;
+    --black-text: #222222;
+    --empty-text-color: #FFFFFF;
+    --sidebar-base-text-color: #FFFFFF;
+    
+    --title-accent-color: #F7C544;
+    --primary-accent-color: #F7C544;
+    --secondary-accent-color: #F7C544;
+    --secondary-accent-extra-color: #F7C544;
+    --tertiary-accent-color: #FF7D5F;
+    --tertiary-accent-extra-color: #FF7D5F;
+    
+    --border-color: rgba(0, 0, 0, 0.08);
+    --subtle-border-color: rgba(255, 255, 255, 0.11);
+    --search-border-color: rgba(255, 255, 255, 0.08);
+    --reference-item-background: rgba(0, 0, 0, 0.15);
+    --brackets-color: rgba(0, 0, 0, 0.25);
+  
+    // Gaia
+    --body-background-color: #224A3F;
+    --popup-background-color: #224A3F;
+    --main-background-color: #18392F;
+    --search-background-color: #18392F;
+    --block-highlight-accent-color: #3E8570;
+    
+    --body-text-color: #FFFFFF;
+    --black-text: #222222;
+    --empty-text-color: #FFFFFF;
+    --sidebar-base-text-color: #FFFFFF;
+    
+    --title-accent-color: #FF93BA;
+    --primary-accent-color: #FF93BA;
+    --secondary-accent-color: #FFADCB;
+    --secondary-accent-extra-color: #FFADCB;
+    --tertiary-accent-color: #99FFE6;
+    --tertiary-accent-extra-color: #78FFDE;
+    
+    --border-color: rgba(0, 0, 0, 0.08);
+    --subtle-border-color: rgba(255, 255, 255, 0.11);
+    --search-border-color: rgba(255, 255, 255, 0.08);
+    --reference-item-background: rgba(0, 0, 0, 0.15);
+    --brackets-color: rgba(0, 0, 0, 0.25); 
+    // Spice
+    --body-background-color: #3C335E;
+    --popup-background-color: #3C335E;
+    --main-background-color: #2A2442;
+    --search-background-color: #2A2442;
+    --block-highlight-accent-color: #796BAB;
+    
+    --body-text-color: #FFFFFF;
+    --black-text: #222222;
+    --empty-text-color: #FFFFFF;
+    --sidebar-base-text-color: #FFFFFF;
+    
+    --title-accent-color: #21D0FF;
+    --primary-accent-color: #AFACFF;
+    --secondary-accent-color: #AFACFF;
+    --secondary-accent-extra-color: #9C98FF;
+    --tertiary-accent-color: #76DDF9;
+    --tertiary-accent-extra-color: #21D0FF;
+    
+    --border-color: rgba(0, 0, 0, 0.08);
+    --subtle-border-color: rgba(255, 255, 255, 0.11);
+    --search-border-color: rgba(255, 255, 255, 0.08);
+    --reference-item-background: rgba(0, 0, 0, 0.15);
+    --brackets-color: rgba(0, 0, 0, 0.25);
+  
+    // NLS
+    --header-font: "IBM Plex Mono", sans-serif;	
+    --body-font: "IBM Plex Mono", sans-serif;
+  
+    --body-background-color: #243342;
+    --popup-background-color: #243342;
+    --main-background-color: #202E3C;
+    --search-background-color: #202E3C;
+    --block-highlight-accent-color: #C8A1FF;
+    
+    --body-text-color: #FFFFFF;
+    --black-text: #222222;
+    --empty-text-color: #9DA5B4;
+    --sidebar-base-text-color: #9DA5B4;
+    
+    --title-accent-color: #50FA7B;
+    --primary-accent-color: #50FA7B;
+    --secondary-accent-color: #C8A1FF;
+    --secondary-accent-extra-color: #C8A1FF;
+    --tertiary-accent-color: #8BE9FD;
+    --tertiary-accent-extra-color: #46DFFF;
+    
+    --border-color: rgba(0, 0, 0, 0.08);
+    --subtle-border-color: rgba(255, 255, 255, 0.11);
+    --search-border-color: rgba(255, 255, 255, 0.08);
+    --reference-item-background: rgba(0, 0, 0, 0.10);
+    --brackets-color: rgba(0, 0, 0, 0.25); 
+    // Add this import below the other import lines at the top. This changes the typeface
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap');
+    // Puma
+    --body-background-color: #353846;
+    --popup-background-color: #3D4050;
+    --main-background-color: #292b35;
+    --search-background-color: #292b35;
+    --block-highlight-accent-color: #6A6F88;
+    
+    --body-text-color: #f5f5f5;
+    --black-text: #222222;
+    --empty-text-color: #9DA5B4;
+    --sidebar-base-text-color: #9DA5B4;
+    
+    --primary-accent-color: #50FA7B;
+    --secondary-accent-color: #CDAEF9;
+    --secondary-accent-extra-color: rgb(203, 170, 247);
+    --tertiary-accent-color: #8BE9FD;
+    --tertiary-accent-extra-color: #46DFFF;
+    
+    --border-color: rgba(0, 0, 0, 0.08);
+    --subtle-border-color: rgba(255, 255, 255, 0.11);
+    --search-border-color: rgba(255, 255, 255, 0.08);
+    --reference-item-background: rgba(0, 0, 0, 0.10);
+    --brackets-color: rgba(0, 0, 0, 0.25); 
+    // Rei
+    --body-background-color: #3A387D;
+    --popup-background-color: #3A387D;
+    --main-background-color: #252456;
+    --search-background-color: #252456;
+    --block-highlight-accent-color: #6462BF;
+  
+    --body-text-color: #FFFFFF;
+    --black-text: #222222;
+    --empty-text-color: #FFFFFF;
+    --sidebar-base-text-color: #FFFFFF;
+  
+    --title-accent-color: #FF93BA;
+    --primary-accent-color: #FF93BA;
+    --secondary-accent-color: #FFADCB;
+    --secondary-accent-extra-color: #FFADCB;
+    --tertiary-accent-color: #99FFE6;
+    --tertiary-accent-extra-color: #78FFDE;
+  
+    --border-color: rgba(0, 0, 0, 0.08);
+    --subtle-border-color: rgba(255, 255, 255, 0.11);
+    --search-border-color: rgba(255, 255, 255, 0.08);
+    --reference-item-background: rgba(0, 0, 0, 0.10);
+    --brackets-color: rgba(0, 0, 0, 0.25); 
+  	// Shinji  
+	--body-background-color: #46535E;
+    --popup-background-color: #46535E;
+    --main-background-color: #333943;
+    --search-background-color: #333943;
+    --block-highlight-accent-color: #758DA2;
+  
+    --body-text-color: #f5f5f5;
+    --black-text: #222222;
+    --empty-text-color: #9DA5B4;
+    --sidebar-base-text-color: #9DA5B4;
+  
+    --title-accent-color: #f5f5f5;
+    --primary-accent-color: #FF93BA;
+    --secondary-accent-color: #D3B4FF;
+    --secondary-accent-extra-color: #D3B4FF;
+    --tertiary-accent-color: #9CEEFF;
+    --tertiary-accent-extra-color: #46DFFF;
+  
+    --border-color: rgba(0, 0, 0, 0.08);
+    --subtle-border-color: rgba(255, 255, 255, 0.11);
+    --search-border-color: rgba(255, 255, 255, 0.08);
+    --reference-item-background: rgba(0, 0, 0, 0.10);
+    --brackets-color: rgba(0, 0, 0, 0.25);
+  */ 
+}
